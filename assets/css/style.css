@@ -1,0 +1,77 @@
+h1{
+    font-weight: 100;
+	text-transform: uppercase;
+    margin:5px 0;
+}
+p{
+    font-size: 1.6em;
+  }
+  
+  #alphabet {
+    margin: auto;
+    max-width : 900px ;
+  }
+  
+  
+  #alphabet li {
+    float:left;
+    margin: 0 10px 10px 0;
+    list-style:none;
+    width:35px;
+    height:30px;
+    padding-top:10px;
+    background:white;
+    color: black;
+    cursor:pointer;
+    @include corners(5px);
+    border: solid 1px $white;
+    
+  }
+  
+  #my-word {
+    margin: 0;
+    display: block;
+    padding: 0;
+    display:block;
+  }
+  
+  #my-word li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+    font-size:1.6em;
+  }
+  
+  #mylives{
+    font-size:1.6em;
+    text-align:center;
+    display:block;
+  }
+  
+  body {
+    background: gray;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    color:$white;
+    height:100%;
+    text-align:center;
+    font-size:18px;
+   }
+  
+  .wrapper{
+    @include clear;
+    width:100%;
+    margin:0 auto;
+  }
+
+  .biggie{
+      height: 120px;
+      width: auto;
+  }
+
+  canvas{
+    color:$white;
+    border: $white dashed 2px;
+    padding:15px;
+  }
